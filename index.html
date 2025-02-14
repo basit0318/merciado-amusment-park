@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merciado</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   
+     <!-- bootstrap css -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+     <!-- bootstrap js -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      
+      <!-- font style 1 -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Courgette&family=Emilys+Candy&family=League+Spartan:wght@100..900&family=Merienda:wght@300..900&family=Rubik+Dirt&display=swap" rel="stylesheet">
+      
+      <!-- font style 2 -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bitter:ital,wght@0,100..900;1,100..900&family=Caveat:wght@400..700&family=Courgette&family=Emilys+Candy&family=League+Spartan:wght@100..900&family=Merienda:wght@300..900&family=Rubik+Dirt&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+      
+      <!-- font icon -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!-- css link -->
+       <link rel="stylesheet" href="home.css">
+    
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg bg-puple">
+    <div class="container-fluid">
+      <img id="logo" src="images/org logo.png" alt="">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="home.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">GALLERY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">CONTACT US</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              SEGMENT
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="mini water park.html">Mini Water park</a></li>
+              <li><a class="dropdown-item" href="food court.html">Food Court</a></li>
+              <li><a class="dropdown-item" href="fun fair.html">Fun Fair</a></li>
+              <li><a class="dropdown-item" href="ticket.html">Ticket&Prices</a></li>
+              <li><hr class="dropdown-divider"></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="search-bar">
+          <div class="search-box">
+            <div class="searchToggle">
+              <i class="fa-solid fa-xmark cancel"></i>
+              <i class="fas fa-search search active"></i>
+            </div>
+              <div class="search-faild">
+                <input type="text" placeholder="search....">
+                <i class="fas fa-search"></i>
+              </div>
+          </div>
+        </div>
+        <button type="button" class="btn1" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Booking Tickets</button>
+      </div>
+    </div>
+  </nav>
+</header>
+<!-- header end -->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div id="ZERO" class="w-100">
+          <div id="hero_video">
+              <video autoplay loop muted plays-inline id="bv">
+                  <source src="images/istockphoto-2149734504-640_adpp_is.mp4" type="video/mp4">
+              </video>
+              <div id="hero">
+                <h3>Welcome To</h3>
+                <h1>Merciado Amusement park</h1>
+                <a href="mini water park.html">Mini Water Park</a>
+                <a href="entertaiment.html">Fun Fair</a>
+              </div>
+            </div> 
+        
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div id="ZERO" class="w-100">
+        <div id="hero_video">
+            <video autoplay loop muted plays-inline id="bv">
+                <source src="images/122422-725502697_small.mp4" type="video/mp4">
+            </video>
+            <div id="hero">
+              <h3>Welcome To</h3>
+              <h1>Merciado Amusement park</h1>
+              <a href="mini water park.html">Mini Water Park</a>
+              <a href="entertaiment.html">Fun Fair</a>
+            </div>
+          </div> 
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div id="ZERO" class="w-100">
+        <div id="hero_video">
+            <video autoplay loop muted plays-inline id="bv">
+                <source src="images/44263-438612336_medium.mp4" type="video/mp4">
+            </video>
+            <div id="hero">
+                <h3>Welcome To</h3>
+                <h1>Merciado Amusement park</h1>
+                <a href="mini water park.html">Mini Water Park</a>
+                <a href="entertaiment.html">Fun Fair</a>
+            </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- hero section end -->
+
+    <!-- about page start-->
+<div class="main">
+  <div class="image">
+    <img id="aboutpic" src="images/gallery Dragon's Fury.jpg" alt="">
+    <img id="aboutpic2" src="images/gallery elephant ride.jpg" alt="">
+  </div>
+  <div id="details">
+    <h3>About us</h3>
+    <h1>Merciado Amusement park<br> Endless Fun Awaits You!</h1>
+    <p>Amusement Park is the ultimate destination for thrill-seekers and families alike.<br>With a wide variety of rides, attractions, and entertainment,<br> we offer endless excitement and unforgettable experiences for all ages.</p>
+    <button class="btn2">Learn More</button>
+  </div>
+</div>
+ <!-- gallery page start -->
+<section id="gallery">
+  <div id="gl-heading">
+    <h2>Gallery</h2>
+    <h1>Merciado <span> Memories</span></h1>
+  </div>
+ </section> 
+ <div class="container">
+  <h2 id="lw" >
+     low Intensity
+  </h2>
+     </div>
+     <div class="smallcointainer">
+      <div class="card1">
+          <img src="images/antique-cars.png">
+          <div class="intro1">
+              <h1> 
+                  ANTIQUE Cars
+                   </h1>
+              
+          </div>
+      </div>
+      
+      <div class="card1">
+          <img src="images/barnstormer.png">
+          <div class="intro1">
+              <h1> BARNSTORMER
+                   </h1>
+              
+          </div>
+      </div>
+      <div class="card1">
+        <img src="images/low kiddie-wheel.webp">
+          <div class="intro1">
+              <h1>KIDDIE WHEEL</h1>
+       
+          </div>
+      </div>
+      <div class="card1">
+          <img src="images/wave-pool.webp" alt="">
+          <div class="intro1">
+              <h1>BOULDER BEACH BAY</h1>
+            
+          </div>
+      </div>
+      <div class="card1">
+          <img src="images/low butterflier.webp">
+          <div class="intro1">
+              <h1> BUTTERFLYER </h1>
+              
+          </div>
+      </div>
+      
+      <div class="card1">
+          <img src="images/low carousel.webp" alt="">
+          <div class="intro1">
+              <h1> 
+                CAROUSEL</h1>
+              
+          </div>
+      </div>
+      <div class="card1">
+          <img src="images/low climbing-trees.webp" alt="">
+          <div class="intro1">
+              <h1>CLIMBING TREE </h1>
+       
+          </div>
+      </div>
+      <div class="card1">
+          <img src="images/low froghopper.webp " alt="">
+          <div class="intro1">
+              <h1>FROG HOPPER</h1>
+            
+          </div>
+      </div>
+      
+  </div>
+
+  <div class="container">
+      <h2 id="lw">
+         Medium Intensity
+      </h2>
+         </div>
+         <div class="smallcointainer">
+          <div class="card1">
+            <img src="images/avalanche med 1.webp">
+               <div class="intro1">
+                    <h1> AVALANCHE MOUNTAIN</h1>
+                  
+              </div>
+          </div>
+          
+          <div class="card1">
+              <img src="images/med 2bumper-boats.webp" alt="">
+              <div class="intro1">
+                  <h1>BUMPER BOATS</h1>
+                  
+              </div>
+          </div>
+          <div class="card1">
+              <img src="images/med 3 eagle-hunt.webp" alt="">
+              <div class="intro1">
+                  <h1>EAGLE HUNT</h1>
+           
+              </div>
+          </div>
+          <div class="card1">
+              <img src="images/riptide-racer med 5.webp" alt="">
+              <div class="intro1">
+                  <h1>RIPTIDE RACER</h1>
+                
+              </div>
+          </div>
+          <div class="card1">
+              <img src="images/krazy-koaster med 3.webp">
+              <div class="intro1">
+                  <h1>KRAZY KOASTER </h1>
+                  
+              </div>
+          </div>
+          
+          <div class="card1">
+              <img src="images/med7.webp" alt="">
+              <div class="intro1">
+                  <h1>ROARING CREEK </h1>
+                  
+              </div>
+          </div>
+          <div class="card1">
+              <img src="images/scrambler med 8.webp" alt="">
+              <div class="intro1">
+                  <h1>SCRAMBLER</h1>
+           
+              </div>
+          </div>
+          <div class="card1">
+              <img src="images/tilt med10.webp" alt="">
+              <div class="intro1">
+                  <h1>TILT-A-WHIRL</h1>
+                
+              </div>
+          </div>
+          
+      </div>
+      <div class="container">
+          <h2 id="lw">
+             High intensity
+          </h2>
+             </div>
+             <div class="smallcointainer">
+              <div class="card1">
+                      <img src="images/velocity high.webp">
+                      <div class="intro1">
+                      <h1>VELOCITY PEAK</h1>
+                      
+                  </div>
+              </div>
+              
+              <div class="card1">
+                  <img src="images/tremors high.webp" alt="">
+                  <div class="intro1">
+                      <h1>TREMORS </h1>
+                      
+                  </div>
+              </div>
+              <div class="card1">
+                  <img src="images/timber-terror high.webp" alt="">
+                  <div class="intro1">
+                      <h1> TIMBER TERROR</h1>
+               
+                  </div>
+              </div>
+              <div class="card1">
+                  <img src="images/stunt-pilot high.webp" alt="">
+                  <div class="intro1">
+                      <h1>STUNT PILOT</h1>
+                    
+                  </div>
+              </div>
+              <div class="card1">
+                  <img src="images/spincycle high.webp">
+                  <div class="intro1">
+                      <h1>SPINCYCLE</h1>
+                      
+                  </div>
+              </div>
+              
+              <div class="card1">
+                  <img src="images/round-up high.webp" alt="">
+                  <div class="intro1">
+                      <h1>ROUND-UP</h1>
+                      
+                  </div>
+              </div>
+              <div class="card1">
+                  <img src="images/krazy-kars high.webp" alt="">
+                  <div class="intro1">
+                      <h1>KRAZY KARS</h1>
+               
+                  </div>
+              </div>
+              <div class="card1">
+                  <img src="images/corkscrew high.webp" alt="">
+                  <div class="intro1">
+                      <h1>CORKSCREW</h1>
+                    
+                  </div>
+              </div>
+                </div>
+                 <!--Subscriptions start -->
+                 <section id="Subscription" class="section-p10">
+                  <div class="Subscription-text">
+                      <h4>Subscribe for Updates</h4>
+                      <p>Sign up for the latest shop updates and <span>special promotions!</span></p>
+                  </div>
+                  <div class="form20">
+                      <input type="text" placeholder="Your email address">
+                      <button class="normal">Sign Up</button>
+                  </div>
+              </section>
+              
+     <!--Subscriptions end -->
+
+      <!-- footer start -->
+    <footer class="section-p1">
+      <div class="colu">
+        <img src="images/org logo.png" alt="" class="logo">
+        
+        <div class="follow">
+          <h4>Follow us</h4>
+          <div class="ichons">
+              <a href="https://www.facebook.com" target="_blank">
+                  <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="https://www.youtube.com" target="_blank">
+                  <i class="fa-brands fa-youtube"></i>
+              </a>
+              <a href="https://www.instagram.com" target="_blank">
+                  <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://twitter.com" target="_blank">
+                  <i class="fa-brands fa-twitter"></i>
+              </a>                
+              <a href="https://www.tiktok.com" target="_blank">
+                  <i class="fa-brands fa-tiktok"></i>
+              </a>                
+              <a href="https://www.google.com" target="_blank">
+                  <i class="fa-brands fa-google"></i>
+              </a>                
+          </div>
+        </div>
+      </div>
+
+      <div class="colu">
+        <h4>Pages</h4>
+        <a href="home.html">Home</a>
+        <a href="mini water park.html">Mini Water Park</a>
+        <a href="fun fair.html">Fun Fair</a>
+        <a href="food court.html">Food Court</a>
+        <a href="ticket.html">Price&Tickets</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+
+      <div class="colu">
+        <h4>Hours</h4>
+        <a href="#">Mon-2:00pm-2:00am</a>
+        <a href="#">Tue-2:00pm-2:00am</a>
+        <a href="#">Wed-2:00pm-2:00am</a>
+        <a href="#">Thu-2:00pm-2:00am</a>
+        <a href="#">Fri-Closed</a>
+        <a href="#">Sat-2:00pm-2:00am</a>
+        <a href="#">Sat-2:00pm-2:00am</a>
+      </div>
+
+      <div class="colu-inst">
+        <h4>Contact</h4>
+        <p><strong>Address : </strong> Bedford Avenue,Brooklyn, NY 11222 </p>
+        <p><strong>Phone no : </strong> +0987234321</p>
+        <p><strong>Hours : </strong> 10:00 - 10:00, Mon - Sat</p>
+
+      </div>
+
+      <div class="copyright">
+        <p>&copy; 2025, Merciado Amusement park - All rights ressrved.</p>
+
+      </div>
+
+  </footer>
+   <!-- Button trigger modal -->
+   <section id="modal">
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="staticBackdropLabel">Booking Ticket</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-container">
+              <label for="name">Full Name:</label>
+              <input type="text" id="name" placeholder="Enter your name">
+    
+              <label for="numPersons">Number of Persons:</label>
+              <input type="number" id="numPersons" placeholder="Enter total number of persons">
+    
+              <label for="category">Select Category (Child 100rp / Adult 200rp):</label>
+              <select id="category">
+                <option value="" selected disabled>Choose an option</option>
+                <option value="adult">Adult</option>
+                <option value="child">Child</option>
+              </select>
+    
+              <label for="numChildren">Number of Children:</label>
+              <input type="number" id="numChildren" placeholder="Enter number of children">
+    
+              <label for="numAdults">Number of Adults:</label>
+              <input type="number" id="numAdults" placeholder="Enter number of adults">
+    
+
+        </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="confirm-button" id="confirmButton">Confirm</button>
+      <div id="output" class="output"></div>
+    </div>
+  </div>
+</div>
+</div>
+
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ <script src="home.js"></script>
+</body>
+</html>

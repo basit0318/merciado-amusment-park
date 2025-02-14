@@ -1,0 +1,785 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+ 
+}
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li a:hover{
+    background-color:skyblue;
+    color: navy;
+    border-radius: 0.5rem;
+}
+.nav-list .dropdown-menu li a{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 100%;
+    margin: -0.6rem -0.4rem;
+    font-weight: 600;
+    padding: 0.5rem 0.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: skyblue;
+    
+
+}
+.dropdown-menu {
+    position: absolute;
+    flex-direction: column;
+    padding: 0.5rem 0;
+    margin: 0.3rem -0.5rem;
+    background-color: rgb(190, 200, 230);
+    color: skyblue;
+    box-shadow: 0 5px 15px rgba(231, 148, 148, 0.411);
+    border-radius: 0.5rem;
+    font-size: 13px;
+    display: none;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+nav ul li .nav-link{
+    font-weight: 200;
+    border-radius: 10px;
+    padding: 10px 15px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* font-family: "League Spartan", sans-serif; */
+    color:whitesmoke;
+    transition: 0.3s ease;
+}
+
+nav ul li .nav-link:hover,
+nav ul li .nav-link.active{
+    color:darkcyan;
+    background-color: skyblue;
+    border-radius: 10px;
+    /* color: rgb(0, 26, 102); */
+}
+
+
+nav ul li .nav-link.active::after,
+nav ul li .nav-link:hover:after{
+    border-radius: 10px;
+    background-color: darkcyan;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+nav ul li{
+    /* border: 2px solid black; */
+    margin: 10px;
+    list-style: none;
+    padding: 8px 8px;
+    position: relative;
+}
+nav{
+    height: 100px;
+}
+#logo{
+    width: 200px;
+}
+.nav-item{
+    margin-left: 50px; 
+    
+}
+header{
+ background-color:darkcyan;
+    box-shadow: 0 5px 15px rgb(0, 0,0,0.10);
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    transition: 0.6s;
+}
+header.sticky{
+    background-image: linear-gradient(rgba(3, 3, 7, 0.39),rgba(12,3,51,0.3));
+    padding: 8px 100px;
+    background-color: rgb(0, 26, 102);
+}
+
+
+
+/* search-bar start */
+nav ul .search-bar{
+    display: flex;
+    align-items: center;
+}
+.search-bar .search-box .searchToggle{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+    margin: -30px 10px;
+}
+.searchToggle i{
+    position: absolute;
+/* background-color: brown; */
+    color:whitesmoke;
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+.searchToggle i.cancel{
+    opacity: 0;
+    pointer-events: none;
+}
+.searchToggle.active i.cancel{
+    opacity: 1;
+    pointer-events: auto;
+}
+.searchToggle.active i.search{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.search-box{
+    position: relative;
+
+}
+.search-box .search-faild{
+    position: absolute;
+    bottom: -65px;
+    right: 10px;
+    height: 50px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    background-color:darkcyan;
+    padding: 3px;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.411);
+    opacity:0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+
+}
+.searchToggle.active ~ .search-faild{
+    bottom: -64px;
+    opacity:1;
+    pointer-events: auto;
+}
+
+
+.search-faild::before{
+    content: " ";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    right: 14px;
+    top: -4px;
+    background-color: darkcyan;
+    transform: rotate(-45deg);
+    z-index: -1;
+}
+.search-faild input{
+    height: 100%;
+    width: 100%;
+    padding: 0 45px 0 15px;
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 4px;
+    color: black;
+}
+.search-faild i{
+    position: absolute;
+    color: black;
+    right: 15px;
+    font-size: 22px;
+    cursor: pointer;
+}
+.search-bar .search-box .searchToggle:hover,
+.search-bar .search-box .searchToggle i:hover{
+    color:skyblue;
+    background-color: darkcyan;
+    border-radius: 10px;
+    /* color: rgb(0, 26, 102); */
+}
+/* search-bar end */
+
+
+/* booking ticket btn   */
+nav .btn1{
+    border: 1px solid skyblue;
+    padding: 10px 15px;
+    position: relative;
+    top: -8px;
+    border-radius: 15px;
+    color:whitesmoke;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(247, 191, 7, 0.151);
+    background-color: darkcyan;
+    transition: 0.3s ease;
+}
+nav .btn1:hover{
+    background-color:whitesmoke;
+    color: darkcyan;
+    font-weight: 600;
+}
+#bv{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media (min-aspect-ratio: 16/9){
+    #bv{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    #bv{
+        width: auto;
+        height: 100%;
+    }
+}
+.c {
+    background-image: url("images/resturant\ baneer.avif");
+background-size: cover;
+text-align: center;
+height: 60vh;
+align-items: center;
+background-repeat: no-repeat;
+}
+.d{
+padding-top: 200px;
+}
+.e {
+    font-family: "Emilys Candy", serif;
+font-size: 50px;
+margin-bottom: 10px;
+color: white;
+}
+.f{
+    font-family: "Emilys Candy", serif;
+    font-size: 20px;
+    color: white;
+  }
+  #rvideo{
+    height: 65vh;
+    width: 320px;
+    object-fit: cover; /* Ensure video covers the container */
+    object-position: center; /* Ensure video is centered */
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+
+  }
+ #rvideo2 {
+    height: 50vh;
+    width: 250px;
+    object-fit: cover; /* Ensure video covers the container */
+    object-position: center; /* Ensure video is centered */
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+
+  }
+.main {
+    padding: 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.image {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    height: 65vh; /* Set fixed height for the container */
+    overflow: hidden; /* Hide any overflowing content */
+}
+ #famous{
+    background: linear-gradient(to top, #000000,grey); 
+    padding: 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+ }
+ #details{
+    padding-left: 60px;
+}
+#details h1{
+    font-size: 45px;
+    color:white;
+    font-family: "Abril Fatface", serif;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+#details p{
+    font-size: 15px;
+    padding: 10px 0;
+    margin-top: 10px;
+    color: white;
+    font-family: "Abril Fatface", serif;
+}
+#details span{
+    font-size: 45px;
+    font-family: "Abril Fatface", serif;
+    margin-bottom: 10px;
+    color: rgba(17, 2, 2, 0.966);
+}
+#lw{
+    margin-left: 120px;
+    background-color: skyblue;
+    color: darkcyan;
+    width: 1300px;
+    height: 70px;
+    margin-top: 40px;
+    font-size: 55px;
+    font-family: "Emilys Candy", serif;
+
+}
+  
+.container1{
+    display: flex;
+ text-align: center;
+ margin-top: 40px;
+ 
+ }
+#menuline{
+    font-size: 20px;
+   color: darkcyan;
+    margin-top: 30px;
+    text-align: center;
+}
+                                        /* card start */
+.g{
+    background-color: wheat;
+    color: blue;
+display: block; /* Ensures full width */
+width: 100%;
+text-align: center; /* Centers the text */
+font-size: 50px;
+margin: 0;
+padding: 0;
+line-height: 1;
+padding-top: 25px;
+  }
+
+  .h {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #141111;
+    width: 380px; /* Set fixed width */
+height: auto; /* Let height adjust */
+text-align: center;    
+  border-radius: 19px;
+  color: white;
+    /* background-color: rgb(243, 231, 164); */
+    text-align: center;
+  }
+
+  .i {
+    /* width: 100%; */
+    border-radius: 8px 8px 0px 0px;
+    width: 100%;
+    height: 35vh;
+/* height: 150px; */
+object-fit: cover;
+  }
+  
+  .j {
+    font-size: 20px;
+    margin: 10px 0 5px;
+    /* background-color: blue; */
+    color: black;
+  }
+   
+  .k {
+    font-size: 16px;
+    color: rgb(12, 11, 11);
+  }
+  #thank-you-screen {
+    display: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: green;
+}
+.btn{
+    background-color: skyblue;
+    border-radius: 8px;
+    padding: 6px 12px 6px 12px;
+  }
+  .btn:hover{
+    background-color: darkcyan;
+    color: white;
+  }
+  span{
+  color: rgb(8, 8, 8);
+  }
+   /* card end */
+   #lww{
+    margin-left: 120px;
+    background-color: skyblue;
+    color: darkcyan;
+    width: 1300px;
+    height: 70px;
+    margin-top: 40px;
+    font-size: 45px;
+    font-family: "Emilys Candy", serif;
+
+}
+     /* reviews start */
+
+     .reviews {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 0 20px;
+      }
+      
+      .reviews-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      
+      .review-card {
+        background-color:#555;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        width: 30%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+      
+      .review-card:hover {
+        transform: scale(1.05);
+      }
+      
+      .review-img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+        object-fit: cover;
+      }
+      
+      .review-text {
+        font-style: italic;
+        color: #555;
+      }
+      
+      .customer-name {
+        font-weight: bold;
+        margin-top: 10px;
+        color: #333;
+      }
+      
+      .customer-location {
+        color: #777;
+        font-size: 0.9em;
+      }
+      
+      @media (max-width: 768px) {
+        .review-card {
+            width: 45%;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .review-card {
+            width: 100%;
+        }
+      }
+      
+      .h21 {
+        text-align: center;
+        font-size: 45px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        color: navy;
+        font-family: "Abril Fatface", serif;
+      }
+      
+      .reviews {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 0 20px;
+      }
+      
+      .reviews-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      
+      .review-card {
+        background-color:whitesmoke;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        width: 30%;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.411);
+        /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+        transition: transform 0.3s ease;
+      }
+      
+      .review-card:hover {
+        transform: scale(1.05);
+      }
+      
+      .star-rating {
+        font-size: 24px;
+        color: #f39c12; /* Gold color for filled stars */
+      }
+      
+      .star {
+        margin-right: 5px;
+      }
+      
+      .review-text {
+        font-style: italic;
+        color: #555;
+      }
+      
+      .customer-name {
+        font-weight: bold;
+        margin-top: 10px;
+        color: black;
+      }
+      
+      .customer-location {
+        color: #777;
+        font-size: 0.9em;
+      }
+      
+      @media (max-width: 768px) {
+        .review-card {
+            width: 45%;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .review-card {
+            width: 100%;
+        }
+      }
+       /* Subscriptions start */
+ #Subscription {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  /* Align items vertically centered */
+    flex-wrap: wrap;
+    width: 100%;
+    background-image: url("images/con-img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 40px 80px;
+}
+
+#Subscription .Subscription-text {
+    width: 100%; /* Make sure the text section takes full width */
+    margin-bottom: 20px; /* Space between text and form */
+}
+
+#Subscription h4 {
+    font-family: "Abril Fatface", serif;
+    color: darkcyan;
+    font-size: 40px;
+    font-weight: 700;
+    backdrop-filter: blur(2px);
+    margin: 0;
+}
+
+#Subscription p {
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    backdrop-filter: blur(2px);
+    margin: 10px 0 0;
+}
+
+#Subscription p span {
+    color: darkcyan;
+    backdrop-filter: blur(2px);
+}
+
+#Subscription .form20 {
+    display: flex;
+    width: 45%;
+    justify-content: flex-end; /* Align form to the right */
+}
+
+#Subscription input {
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 20px;
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 10px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+ 
+}
+
+#Subscription button {
+    background-color: darkcyan;
+    color: skyblue;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 40px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s ease;
+    border-radius: 10px;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#Subscription button:hover {
+    background-color: skyblue;
+    color: darkcyan;
+}
+
+/* Subscriptions end */
+   /* footer start */
+   .section-p1{
+    padding: 40px 80px;
+}
+footer{
+    background-image: linear-gradient(rgba(3, 3, 7, 0.39),rgba(12,3,51,0.3));
+    height: 70vh;
+    background-color:darkcyan;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .colu{
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    margin-bottom: 2px;
+}
+footer .logo{
+    margin-bottom: 30px;
+    width: 200px;
+}
+footer h4{
+    font-size: 28px;
+    color: skyblue;
+    font-family: "Abril Fatface", serif;
+    padding-bottom: 10px ;
+}
+footer p{
+    color: whitesmoke;
+    font-size: 16px;
+    margin: 0 0 5px 0;
+}
+footer strong{
+    font-size: 20px;
+}
+footer a{
+    font-size: 17px;
+    text-decoration: none;
+    color:white;
+    margin-bottom:8px ;
+}
+footer .follow{
+    margin-top: 20px;
+}
+footer .follow i{
+    color:whitesmoke;
+    font-size: 25px;
+    padding-right: 4px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+footer .follow i:hover{
+    color:skyblue;
+}
+footer a:hover{
+    color: skyblue;
+}
+/* footer end */
+/* footer start */
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
+footer .copyright p{
+    padding-top: 30px;
+    font-family: "League Spartan", sans-serif;
+}
+/* footer end */
+     
+/* booking ticket */
+label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 400;
+    color: darkcyan;
+}
+input, select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.confirm-button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid;
+    border-radius: 4px;
+    background-color:darkcyan;
+    color: skyblue;
+    font-weight: 700;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.411);
+    /* border: none; */
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.confirm-button:hover {
+    border: 1px solid skyblue;
+    background-color:whitesmoke;
+    color: darkcyan;
+}
+.output {
+    color: whitesmoke;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.modal-content{
+    background-color: skyblue;
+}
+.modal-header h3{
+    padding-left: 145px;
+    color:  darkcyan;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: "Emilys Candy", serif;
+}
+.modal-header button{
+    background-color: darkcyan;
+}
